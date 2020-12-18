@@ -34,13 +34,20 @@ body {
   padding: 30px 0;
 }
 
-.c-to-f-container {
+.c-to-f-container,
+.f-to-c-container {
   display: flex;
   height: 50px;
 }
 
+.c-to-f-container {
+  padding-bottom: 100px;
+}
+
 .c-input,
-.c-result {
+.c-result,
+.f-input,
+.f-result {
   width: 200px;
   height: 50px;
   background: #ffffff;
@@ -61,7 +68,8 @@ body {
   padding: 0 30px;
 }
 
-.c-input input {
+.c-input input,
+.f-input input {
   position: absolute;
   top: 0;
   left: 0;
@@ -74,4 +82,42 @@ body {
   text-align: left;
   padding-left: 3px;
   border: 0;
+}
+
+.c-result-value,
+.f-result-value {
+  display: block;
+  width: 152px;
+  height: 50px;
+  background-color: transparent;
+  position: absolute;
+  border-radius: 15px;
+  line-height: 50px;
+  font-size: 40px;
+  text-align: left;
+  padding-left: 3px;
+}
+
+.container-footer {
+  padding-top: 50px;
+}
+
+.convert-btn {
+  width: 250px;
+  height: 50px;
+  background: #ffffff;
+  box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.convert-btn:hover {
+  background-color: rgb(221, 219, 219);
+}
+
+.convert-btn:active {
+  scale: 0.99;
 }
